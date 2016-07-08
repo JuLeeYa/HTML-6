@@ -8,8 +8,8 @@
 </head>
 <body>
 	<div class="wrapper">
-	
-	<!-- <TOP> -->
+
+		<!-- <TOP> -->
 
 		<div class="top">
 			<div class="circle">
@@ -24,13 +24,16 @@
 					<input type="submit" class="submit" value="вход">
 					<a href="#">регистрация</a>
 					<a href="#" class="forget_pass">забыли пароль?</a>
+					<div class="line"></div>
 				</form>
 			</div>
 
 			<nav>
-				<a href="#"><img src="img/home.png" alt="home"></a>
-				<a href="#"><img src="img/map.png" alt="map"></a>
-				<a href="#"><img src="img/letter.png" alt="letter"></a>
+				<ul>
+					<li><a href="#"><img src="img/home.png" alt="home"></a></li>
+					<li><a href="#"><img src="img/map.png" alt="map"></a></li>
+					<li><a href="#"><img src="img/letter.png" alt="letter"></a></li>
+				</ul>
 			</nav>
 		</div>
 
@@ -42,7 +45,7 @@
 
 		<!-- <MENU> -->
 
-		<nav class="menu">
+		<div class="menu">
 			<div class="menu_left">
 				<a href="#">О КОМПАНИИ</a>
 				<a href="#">ОПЛАТА</a>
@@ -57,12 +60,10 @@
 				<p>на сумму: </p>
 				<p class="summ">0.00 грн.</p>
 			</div>
-		</nav>
+		</div>
 
 		<div class="search">
-			<div class="search_auto">
-
-			</div>
+			<div class="search_auto"></div>
 			<div class="search_tire"></div>
 			<div class="search_rim"></div>
 
@@ -85,13 +86,10 @@
 						</div>
 						<h3>ШИНЫ</h3>
 					</div>
-					<ul>
-
-						<li><a href="#">Наименование 1</a></li>
-						<li><a href="#">Наименование 2</a></li>
-						<li><a href="#">Наименование 3</a></li>
-						<li><a href="#">Наименование 4</a></li>
-					</ul>
+						<a href="#">Наименование 1</a>
+						<a href="#">Наименование 2</a>
+						<a href="#">Наименование 3</a>
+						<a href="#">Наименование 4</a>
 				</div>
 
 				<div class="rim">
@@ -128,7 +126,7 @@
 				</div>
 			</div>
 
-					<!-- MAIN CENTER -->
+			<!-- MAIN CENTER -->
 
 			<div class="main_center">
 				<div class="first_line">
@@ -137,181 +135,179 @@
 						<h3>Goodyear</h3>
 						<p>Ultra Grip Extreme</p>
 						<div class="frame">
-							<a href="#"><img src="img/1.png" alt="GoodYear"></a>
+							<figure>
+								<a href="#"><img src="img/1.png" alt="GoodYear"></a>
+								<figcaption>90.00 грн.</figcaption>
+							</figure>
+							
 						</div>
-						<div class="price">
-							<p>90.00</p>
-							<span>грн.</span>
-						</div>	
-					</div>
+					</div>			
 
+					
 					<div class="Nokian">
 						<h3>Nokian</h3>
-							<p>Hakkapeliitta R</p>
-							<div class="frame">
+						<p>Hakkapeliitta R</p>
+						<div class="frame">
+							<figure>
 								<a href="#"><img src="img/2.png" alt="Nokian"></a>
-							</div>
-							<div class="price">
-								<p>115.00</p>
-								<span>грн.</span>
-							</div>	
+								<figcaption class="Nokian_price">115.00 грн.</figcaption>	
+							</figure>
+										
+						</div>	
 					</div>
 
 					<div class="Hankook">
 						<h3>Hankook</h3>
-							<p>K 708 155/65 R14</p>
-							<div class="frame">
+						<p>K 708 155/65 R14</p>
+						<div class="frame">
+							<figure>
 								<a href="#"><img src="img/3.png" alt="Hankook"></a>
-							</div>
-							<div class="price">
-								<p>393.00</p>
-								<span>грн.</span>
-							</div>	
-					</div>
-					
-					
+								<figcaption>393.00 грн.</figcaption>
+							</figure>
+							
+						</div>
+					</div>	
+				</div>		
 
-				</div>
+				
 				<div class="second_line">
 					<div class="goodyear">
 						<h3>Goodyear</h3>
 						<p>Ultra Grip Extreme</p>
 						<div class="frame">
-							<a href="#"><img src="img/1.png" alt="GoodYear"></a>
-						</div>
-						<div class="price">
-							<p>90.00</p>
-							<span>грн.</span>
+							<figure>
+								<a href="#"><img src="img/1.png" alt="GoodYear"></a>
+								<figcaption>90.00 грн.</figcaption>
+							</figure>
+							
 						</div>	
 					</div>
 
 					<div class="Nokian">
 						<h3>Nokian</h3>
-							<p>Hakkapeliitta R</p>
-							<div class="frame">
+						<p>Hakkapeliitta R</p>
+						<div class="frame">
+							<figure>
 								<a href="#"><img src="img/2.png" alt="Nokian"></a>
-							</div>
-							<div class="price">
-								<p>115.00</p>
-								<span>грн.</span>
-							</div>	
+								<figcaption class="Nokian_price">115.00 грн.</figcaption>
+							</figure>
+							
+						</div>	
 					</div>
 
 					<div class="Hankook">
 						<h3>Hankook</h3>
-							<p>K 708 155/65 R14</p>
-							<div class="frame">
+						<p>K 708 155/65 R14</p>
+						<div class="frame">
+							<figure>
 								<a href="#"><img src="img/3.png" alt="Hankook"></a>
-							</div>
-							<div class="price">
-								<p>393.00</p>
-								<span>грн.</span>
-							</div>	
+								<figcaption>393.00 грн.</figcaption>
+							</figure>
+							
+						</div>	
 					</div>
 				</div>
+
 				<div class="third_line">
-				<div class="goodyear">
+					<div class="goodyear">
 						<h3>Goodyear</h3>
 						<p>Ultra Grip Extreme</p>
 						<div class="frame">
-							<a href="#"><img src="img/1.png" alt="GoodYear"></a>
-						</div>
-						<div class="price">
-							<p>90.00</p>
-							<span>грн.</span>
+							<figure>
+								<a href="#"><img src="img/1.png" alt="GoodYear"></a>
+								<figcaption>90.00 грн.</figcaption>
+							</figure>
+							
 						</div>	
 					</div>
 
 					<div class="Nokian">
 						<h3>Nokian</h3>
-							<p>Hakkapeliitta R</p>
-							<div class="frame">
+						<p>Hakkapeliitta R</p>
+						<div class="frame">
+							<figure>
 								<a href="#"><img src="img/2.png" alt="Nokian"></a>
-							</div>
-							<div class="price">
-								<p>115.00</p>
-								<span>грн.</span>
-							</div>	
+								<figcaption class="Nokian_price">115.00 грн.</figcaption>
+							</figure>
+							
+						</div>	
 					</div>
 
 					<div class="Hankook">
 						<h3>Hankook</h3>
-							<p>K 708 155/65 R14</p>
-							<div class="frame">
-								<a href=""><img src="img/3.png" alt="Hankook"></a>
-							</div>
-							<div class="price">
-								<p>393.00</p>
-								<span>грн.</span>
-							</div>	
+						<p>K 708 155/65 R14</p>
+						<div class="frame">
+							<figure>
+								<a href="#"><img src="img/3.png" alt="Hankook"></a>
+								<figcaption>393.00 грн.</figcaption>
+							</figure>
+							
+						</div>	
 					</div>
 				</div>
 
 			</div>
 
+			<!-- MAIN RIGHT -->
 
 			<div class="main_right">
 				<div class="brands">
-					<div class="catalog">
+					<div class="catalog2">
 						<div class="circle">
 							<img src="img/file.png" class="file" 
-						alt="file">
+							alt="file">
 						</div>
 						<p>БРЕНДЫ</p>
 					</div>
 				</div>	
-					
+
 				
 				<div class="tires">
-				<div class="container">
-					<div class="right_circle">
-						<div class="white_circle"></div>
+					<div class="container">
+						<div class="right_circle">
+							<div class="white_circle"></div>
+						</div>
+						<h3>ШИНЫ</h3>
 					</div>
-					<h3>ШИНЫ</h3>
-				</div>
 					
 					<form action="#">
-						<ul>
-							<li><input type="checkbox" id="tire1"><label for="tire1">Бренд 1</label></li>
-							<li><input type="checkbox" id="tire2"><label for="tire2">Бренд 2</label></li>
-							<li><input type="checkbox" id="tire3"><label for="tire3">Бренд 3</label></li>
-						</ul>
+						<p><input type="checkbox" id="tire1"><label for="tire1">Бренд 1</label></p>
+						<p><input type="checkbox" id="tire2"><label for="tire2">Бренд 2</label></p>
+						<p><input type="checkbox" id="tire3"><label for="tire3">Бренд 3</label></p>
 					</form>
 
-			</div>
-			<div class="rims">
-				<div class="container">
-					<div class="right_circle">
-						<div class="white_circle"></div>
-					</div>
-					<h3>ДИСКИ</h3>
-					
 				</div>
-					<form action="#">
-						<ul>
-							<li><input type="checkbox" id="rim1"><label for="rim1">Бренд 1</label></li>
-							<li><input type="checkbox" id="rim2"><label for="rim2">Бренд 2</label></li>
-							<li><input type="checkbox" id="rim3"><label for="rim3">Бренд 3</label></li>
-						</ul>
-					</form>
-			</div>
+				<div class="rims">
+					<div class="container_r">
+						<div class="right_circle">
+							<div class="white_circle"></div>
+						</div>
+						<h3>ДИСКИ</h3>
 
-			<button type="submit">Выбрать</button>
- 		</div>			
+					</div>
+					<form action="#">
+						<p><input type="checkbox" id="rim1"><label for="rim1">Бренд 1</label></p>
+						<p><input type="checkbox" id="rim2"><label for="rim2">Бренд 2</label></p>
+						<p><input type="checkbox" id="rim3"><label for="rim3">Бренд 3</label></p>
+					</form>
+				</div>
+
+				<button type="submit">Выбрать</button>
+			</div>			
 
 		</main>
 
-			<!-- BRANDS LOGO -->
+		<!-- BRANDS LOGO -->
 
 		<div class="brands_logo">
-			<img src="img/toyo.png" alt="toyo">
-			<img src="img/bridge.png" alt="bridge">
-			<img src="img/continental.png" alt="continental">
-			<img src="img/oval.png" alt="cooper">
-			<img src="img/avon.png" alt="avon">
-			<img src="img/tire.png" alt="tire">
-			<img src="img/pirelli.png" alt="pirelli">
-			<img src="img/dunlop.png" alt="dunlop">
+			<a href="#"><img src="img/toyo.png" alt="toyo"></a>
+			<a href="#"><img src="img/bridge.png" alt="bridge"></a>
+			<a href="#"><img src="img/continental.png" alt="continental"></a>
+			<a href="#"><img src="img/oval.png" alt="cooper"></a>
+			<a href="#"><img src="img/avon.png" alt="avon"></a>
+			<a href="#" id="factory"><img src="img/tire.png"  alt="tire"></a>
+			<a href="#"><img src="img/pirelli.png" alt="pirelli"></a>
+			<a href="#"><img src="img/dunlop.png" alt="dunlop"></a>
 		</div>
 
 		<footer>
@@ -324,6 +320,7 @@
 			<p>Создание сайта &copy; Global Vision</p>
 
 		</footer>
+
 
 	</div>
 	

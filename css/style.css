@@ -4,7 +4,7 @@
 	margin: 0 auto;
 	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 }
-   /*TOP*/
+/*TOP*/
 .top{
 	display: inline-flex;
 	margin: 22px 0px 0px 7px;
@@ -57,9 +57,12 @@
 	padding: 1px 4px 0px 4px;
 	border: none;
 	border-right: 1px solid #fff;
-  background: none;
-  color: #fff;
-  font-size: 11px;
+	background: none;
+	color: #fff;
+	font-size: 11px;
+}
+.form{
+	position: relative;
 }
 .form a{
 	text-decoration: none;
@@ -68,13 +71,21 @@
 }
 .form .forget_pass{
 	font-size: 12px;
-	text-decoration: underline;
 	color: #bfbfbf;
 	padding-left: 13px;
+}
+.line{
+	height: 1px;
+	width: 94px;
+	background-color: #fff;
+	position: absolute;
+	top: 19px;
+	right: 10px;
 }
 .top nav{
 	width: 71px;
 	height: 19px;
+	
 	border-radius: 10px/10px 10px 9px 9px;
 	border: solid 1px #bdc4c7;
 	margin-left: 17px;
@@ -82,10 +93,12 @@
 	padding: 1px 0px 0px 3px;
 	box-shadow: 0px 0px 8px 0px rgba(188,195,198,1);
 }
-.top nav a{
-	margin: 0px 0px 0px 4px;
+.top nav ul{
+	display: inline-flex;
 }
-
+.top nav li{
+	margin: 0px 5px 0px 4px;
+}
 .banner{
 	margin-top: 10px;
 	max-width: 100%
@@ -181,37 +194,42 @@ main{
 	display: flex;
 	margin: 13px 0px 0px 0px;
 }
+
+/*MAIN_LEFT*/
 .main_left{
-	width: 19%;
+	width: 18%;
 	margin-top: 4px;
 }
 .main_left .circle{
 	margin-left: 2px;
+	margin-top: 1px;
 }
 .mail_left p{
 	padding: 5px;
 }
 .catalog{
 	display: inline-flex;
-	font-size: 13px;
+	font-size: 12px;
 	color: #114165;
 	border-radius: 12px/12px 12px 13px 13px;
 	box-shadow: 2px 3px 3px rgba(150,150,150,.75);
 	border: solid 1px #79878d;
-	width: 178px;
-	height: 25px;
-	margin-bottom: 13px;
+	width: 179px;
+	height: 22px;
+	margin-bottom: 12px;
+	padding: 1px 0px;
 }
 .file{
-	margin: 4px 0px 0px 5px;
+	margin: 3px 0px 0px 5px;
 }
 .catalog p{
 	padding: 6px 0px 0px 4px;
+	letter-spacing: 0.4px;
 }
 .container{
 	border-radius: 11px/13px;
 	border: solid 1px #79878d;
-	padding: 1px 72px 2px 2px;
+	padding: 2px 73px 2px 1px;
 	display: inline-flex;
 }
 .left_circle,
@@ -224,7 +242,7 @@ main{
 	position: relative;
 }
 .white_circle
- {
+{
 	width: 12px;
 	height: 12px;
 	background-color: #fff;
@@ -234,44 +252,46 @@ main{
 	top: 5px;
 }
 
-	/*MAIN_LEFT*/
-
 .main_left h3,
 .main_right h3{
 	font-size: 14px;
 	color: #114165;
-	margin: 5px 0px 0px 3px;
+	margin: 5px 0px 0px 2px;
 }
-.main_left li{
-	list-style: circle;
-	margin-left: 46px;
-	color: #465961;
-}
+
 .main_left a{
 	color: #465961;
 	font-size: 13px;
-	line-height: 26px;
 	text-decoration: none;
+	background: url(../img/dot.png) no-repeat 0 4px;
+	margin-left: 36px;
+	padding-left: 10px;
+	line-height: 26px;
+	
 }
 .main_left a:hover{
 	text-decoration: underline;
-	font-weight: bold;
-	font-style: italic;
+	font: italic bold 14px Arial;
 	color: #0c3256;
+	background: url(../img/dot2.png) no-repeat 0 4px;
+	margin-left: 36px;
+	padding-left: 10px;
+	line-height: 26px;
 }
 .rim{
 	margin-top: -4px;
 }
 .bolt{
-	margin-top: -3px; 
+	margin-top: -5px; 
 }
 
 /*MAIN CENTER*/
 .main_center{
 	width: 47%;
-	padding: 14px 36px 28px 24px;
+	padding: 13px 36px 49px 24px;
 	border-radius: 3px/2px 2px 3px 3px;
 	background-image: linear-gradient(to top, rgba(35,75,93,.49), rgba(201,207,209,.49));
+	margin-left: 10px;
 }
 .first_line,
 .second_line,
@@ -283,6 +303,17 @@ main{
 	color: #206988;
 	font-weight: bolder;
 	margin-left: 33px;
+}
+.frame a{
+	text-decoration: none;
+}
+figcaption{
+	color: #114165;
+	padding: 6px 0px 0px 6px;
+	font: italic bold 16px Arial;
+}
+.Nokian_price{
+	padding-left: 0px;
 }
 .main_center p{
 	font-size: 13px;
@@ -296,42 +327,26 @@ main{
 	background-color: #fff;
 	border: solid 1px #a4aeb1;
 }
-.main_center img{
+.main_center figure{
 	margin: 5px 0px 0px 29px;
 }
-.price{
-	display: inline-flex;
-	margin: 5px 0px 0px 22px;
-	font-family: Arial;
-	font-weight: bold;
-	font-style: italic;
-	color: #114165;
-	
-}
-.price p{
-	font-size: 17px;
-	color: #114165;
-	
-}
-.price span{
-	font-size: 13px;
-	margin: 2px 0px 0px 6px;
-}
+
 .Nokian{
 	margin: 0px 30px 0px 29px;
 }
-.Nokian img{
+.Nokian figure{
 	margin-left: 33px;
 }
 .Nokian h3{
 	margin-left: 45px;
 }
 .Nokian p{
-margin-left: 24px;
+	margin-left: 24px;
 }
 .Nokian .price p{
 	margin-left: 12px;
 }
+
 .Hankook h3{
 	margin-left: 39px;
 }
@@ -340,7 +355,7 @@ margin-left: 24px;
 }
 
 .second_line{
-	margin: 23px 0px 23px 0px;
+	margin: 45px 0px 46px 0px;
 }
 
 /*MAIN RIGHT*/
@@ -352,28 +367,58 @@ margin-left: 24px;
 .main_right .tires{
 	margin: 2px 0px 0px 12px;
 }
+.container_r{
+	border-radius: 11px/13px;
+	border: solid 1px #79878d;
+	padding: 1px 57px 2px 0px;
+	display: inline-flex;
+}
+
 .main_right .container{
 	padding-right: 57px;
 }
-.main_right .brands p {
-	font-size: 14px;
-	padding: 8px 0px 0px 7px;
+.catalog2{
+	display: inline-flex;
+	font-size: 12px;
+	color: #114165;
+	border-radius: 12px/12px 12px 13px 13px;
+	box-shadow: 2px 3px 3px rgba(150,150,150,.75);
+	border: solid 1px #79878d;
+	width: 173px;
+	height: 20px;
+	margin-bottom: 12px;
+	padding: 3px 2px;
 }
-.main_right ul{
-	margin: 4px 0px 0px 14px;
+.catalog2 p{
+	padding: 4px 0px 0px 5px;
+	font-size: 14px;
+}
+.main_right form{
+	position: relative;
+	margin: 5px 0px 0px 6px;
+}
+.main_right form p{
+	font-size: 13px;
+	line-height: 1.95;
+	padding-left: 29px;
+}
+#tire1,
+#tire2,
+#tire3,
+#rim1,
+#rim2,
+#rim3 {
+	position: absolute;
+	left: 0px;
+	width: 11px;
 }
 
-.main_right li{
-	font-size: 13px;
-	color: #465961;
-	line-height: 25px;
-}
 .rims{
-	margin: 9px 0px 0px 12px;
+	margin: 7px 0px 0px 12px;
 }
 button{
 	margin: 14px 0px 0px 22px;
-	padding: 6px 9px 6px 12px;
+	padding: 5px 9px 6px 11px;
 	font-family: Arial;
 	font-size: 11px;
 	text-transform: uppercase;
@@ -386,15 +431,25 @@ button{
 	box-shadow: 6px 7px 7px -4px rgba(0,0,0,0.52);
 }
 
+
+
 /*BRANDS*/
 .brands_logo{
 	display: inline-flex;
-	margin: 42px 0px 21px 117px;
+	margin: 39px 0px 22px 116px;
+	
 }
 .brands_logo img{
 	width: 100%;
 	height: 100%;
-	margin-right: 13px;
+}
+.brands_logo a{
+	margin-right: 13.5px;
+	padding-top: 4px;
+}
+#factory{
+	margin-top: -4px;
+	margin-right: 12px;
 }
 footer{
 	width: 908px;
